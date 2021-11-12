@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Overlay Effect</title>
+    <link rel="icon" href="https://t3.ftcdn.net/jpg/00/83/69/68/240_F_83696860_E3fjlMoSdp09fYm9b8FpeolSSS9sG5JL.jpg">
+</head>
+<body>
+  <div class="container">
+      <img src="https://w0.peakpx.com/wallpaper/908/383/HD-wallpaper-girl-adjusting-hairs-girls-model.jpg" alt="">
+      <div class="overlay-content">
+      <h1>Alexa Duo</h1>
+      <p>Model</p>
+    </div>
+  </div>
+<style>
+@import url(font\ face.css);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    border: 1px solid #ccc;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+.container img {
+    width: 100%;
+    padding: 2px;
+    transition: all 0.3s ease-in-out;
+} 
+.container .overlay-content {
+    position: absolute;
+    top: 125%;
+    left: 50%;
+    padding: 7px;
+    background: #0082e6;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    font-family: Google Sans,arial,Roboto,sans-serif-medium,sans-serif;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    transform: translate(-50%, -50%);
+}
+.container .overlay-content h1 {
+    font-weight: 430;
+}
+.container .overlay-content p {
+    padding: 3px;
+    margin-bottom: .4rem;
+}
+.container img:hover {
+    transform: scale(1.2) rotate(4deg);
+}
+.container img:hover + .overlay-content {
+    top: 85%;
+}
+</style>
+</body>
+</html>
